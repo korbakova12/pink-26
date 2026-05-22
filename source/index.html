@@ -12,7 +12,15 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="#" width="74" height="23" alt="Логотип Pink">
+      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses"></use>
+      </svg>
+      <svg class="logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses-desktop"></use>
+      </svg>
+      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+        <use href="../icons/stack.svg#pink"></use>
+      </svg>
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -38,7 +46,14 @@
     <h1 class="visually-hidden">Приложение PINK</h1>
     <div class="hero">
       <p class="hero__intro">Взгляните на жизнь иначе!</p>
-      <img class="hero__image" src="#" width="320" height="286" alt="Фотография Нью-Йоркской публичной библиотеки на телефоне с использованием розового фильтр.">
+      <picture>
+        <source width="1050" height="645" type="image/webp" media="(min-width: 1200px)" srcset="images/hero-phone-desktop@1x.webp 1x, images/hero-phone-desktop@2x.webp 2x">
+        <source width="660" height="545" type="image/webp" media="(min-width: 660px)" srcset="images/hero-phone-tablet@1x.webp 1x, images/hero-phone-tablet@2x.webp 2x">
+        <source width="320" height="286" type="image/webp" srcset="images/hero-phone-mobile@1x.webp 1x, images/hero-phone-mobile@2x.webp 2x">
+        <source width="1050" height="645" type="image/png" media="(min-width: 1200px)" srcset="images/hero-phone-desktop@1x.png 1x, images/hero-phone-desktop@2x.png 2x">
+        <source width="660" height="545" type="image/png" media="(min-width: 660px)" srcset="images/hero-phone-tablet@1x.png 1x, images/hero-phone-tablet@2x.png 2x">
+        <img class="hero__image" src="images/hero-phone-mobile@1x.png" srcset="images/hero-phone-mobile@2x.png 2x" width="320" height="286" alt="Фотография Нью-Йоркской публичной библиотеки на телефоне с использованием розового фильтр.">
+      </picture>
       <a class="hero__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
       <ul class="hero__store-list store-list">
         <li class="store-list__item">
@@ -185,12 +200,30 @@
           <a class="contacts__option-value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
-      <img class="contacts__map" src="#" width="1200" height="502" alt="Карта проезда к офису PINK">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f806459fd0d7d79f163445b3da262c4448550983f251997d92b12d6c3f61d9e&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+      <noscript>
+        <picture>
+          <source width="1200" height="502" type="image/webp" media="(min-width: 1200px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+          <source width="660" height="374" type="image/webp" media="(min-width: 660px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+          <source width="320" height="200" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+          <source width="1200" height="502" type="image/png" media="(min-width: 1200px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="660" height="374" type="image/png" media="(min-width: 660px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="200" alt="Карта проезда к офису PINK">
+        </picture>
+      </noscript>
     </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="#" width="145" height="40" alt="Логотип Pink">
+      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses"></use>
+      </svg>
+      <svg class="logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses-desktop"></use>
+      </svg>
+      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+        <use href="../icons/stack.svg#pink"></use>
+      </svg>
     </a>
     <ul class="main-footer__social social">
       <li class="social__item">
