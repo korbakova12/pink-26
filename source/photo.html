@@ -12,7 +12,15 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="#" width="74" height="23" alt="Логотип Pink">
+      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses"></use>
+      </svg>
+      <svg class="logo__image logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses-desktop"></use>
+      </svg>
+      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+        <use href="../icons/stack.svg#pink"></use>
+      </svg>
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -41,7 +49,14 @@
       <ul class="photos__list">
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image photo__image--panorama" src="#" width="320" height="137" alt="Вид на мост через реку и густой зеленый лес">
+            <picture>
+              <source width="1200" height="506" type="image/webp" media="(min-width: 1200px)" srcset="images/photos-panorama-desktop@1x.webp 1x, images/photos-panorama-desktop@2x.webp 2x">
+              <source width="660" height="509" type="image/webp" media="(min-width: 660px)" srcset="images/photos-panorama-tablet@1x.webp 1x, images/photos-panorama-tablet@2x.webp 2x">
+              <source width="320" height="137" type="image/webp" srcset="images/photos-panorama-mobile@1x.webp 1x, images/photos-panorama-mobile@2x.webp 2x">
+              <source width="1200" height="506" type="image/jpg" media="(min-width: 1200px)" srcset="images/photos-panorama-desktop@1x.jpg 1x, images/photos-panorama-desktop@2x.jpg 2x">
+              <source width="660" height="509" type="image/jpg" media="(min-width: 660px)" srcset="images/photos-panorama-tablet@1x.jpg 1x, images/photos-panorama-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--panorama" src="images/photos-panorama-mobile@1x.jpg" srcset="images/photos-panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Вид на мост через реку и густой зеленый лес">
+            </picture>
           </a>
           <p class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
           <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -49,7 +64,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image " src="#" width="280" height="137" alt="Процесс фотографирования белого седана">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-1-car-desktop@1x.webp 1x, images/photo-1-car-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-1-car-tablet@1x.webp 1x, images/photo-1-car-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-1-car-mobile@1x.webp 1x, images/photo-1-car-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-1-car-desktop@1x.jpg 1x, images/photo-1-car-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-1-car-tablet@1x.jpg 1x, images/photo-1-car-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-1-car-mobile@1x.jpg" srcset="images/photo-1-car-mobile@2x.jpg 2x" width="280" height="137" alt="Процесс фотографирования белого седана">
+            </picture>
           </a>
           <p class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></p>
           <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -57,7 +79,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image" src="#" width="280" height="137" alt="Барабанная установка">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-2-drums-desktop@1x.webp 1x, images/photo-2-drums-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-2-drums-tablet@1x.webp 1x, images/photo-2-drums-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-2-drums-mobile@1x.webp 1x, images/photo-2-drums-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-2-drums-desktop@1x.jpg 1x, images/photo-2-drums-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-2-drums-tablet@1x.jpg 1x, images/photo-2-drums-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-2-drums-mobile@1x.jpg" srcset="images/photo-2-drums-mobile@2x.jpg 2x" width="280" height="137" alt="Барабанная установка">
+            </picture>
           </a>
           <p class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></p>
           <p class="photo__text">Соседи будут рады!</p>
@@ -65,7 +94,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image" src="#" width="280" height="137" alt="Вид на небо через стеклянную крышу">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-3-sky-desktop@1x.webp 1x, images/photo-3-sky-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-3-sky-tablet@1x.webp 1x, images/photo-3-sky-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-3-sky-mobile@1x.webp 1x, images/photo-3-sky-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-3-sky-desktop@1x.jpg 1x, images/photo-3-sky-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-3-sky-tablet@1x.jpg 1x, images/photo-3-sky-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-3-sky-mobile@1x.jpg" srcset="images/photo-3-sky-mobile@2x.jpg 2x" width="280" height="137" alt="Вид на небо через стеклянную крышу">
+            </picture>
           </a>
           <p class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></p>
           <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -73,7 +109,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image" src="#" width="280" height="137" alt="Продажа дынь и арбузов на рынке под шатром">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-4-watermelon-desktop@1x.webp 1x, images/photo-4-watermelon-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-4-watermelon-tablet@1x.webp 1x, images/photo-4-watermelon-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-4-watermelon-mobile@1x.webp 1x, images/photo-4-watermelon-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-4-watermelon-desktop@1x.jpg 1x, images/photo-4-watermelon-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-4-watermelon-tablet@1x.jpg 1x, images/photo-4-watermelon-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-4-watermelon-mobile@1x.jpg" srcset="images/photo-4-watermelon-mobile@2x.jpg 2x" width="280" height="137" alt="Продажа дынь и арбузов на рынке под шатром">
+            </picture>
           </a>
           <p class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></p>
           <p class="photo__text">Самая кубанская в мире!</p>
@@ -81,7 +124,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image" src="#" width="280" height="137" alt="Ноги мужчины на фоне спуска с высокой горы">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-5-mountain-desktop@1x.webp 1x, images/photo-5-mountain-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-5-mountain-tablet@1x.webp 1x, images/photo-5-mountain-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-5-mountain-mobile@1x.webp 1x, images/photo-5-mountain-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-5-mountain-desktop@1x.jpg 1x, images/photo-5-mountain-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-5-mountain-tablet@1x.jpg 1x, images/photo-5-mountain-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-5-mountain-mobile@1x.jpg" srcset="images/photo-5-mountain-mobile@2x.jpg 2x" width="280" height="137" alt="Ноги мужчины на фоне спуска с высокой горы">
+            </picture>
           </a>
           <p class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></p>
           <p class="photo__text">Где снег-то?</p>
@@ -89,7 +139,14 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__image-link" href="#">
-            <img class="photo__image" src="#" width="280" height="137" alt="Крыло самолета на фоне заката">
+            <picture>
+              <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/photo-6-sunset-desktop@1x.webp 1x, images/photo-6-sunset-desktop@2x.webp 2x">
+              <source width="300" height="300" type="image/webp" media="(min-width: 660px)" srcset="images/photo-6-sunset-tablet@1x.webp 1x, images/photo-6-sunset-tablet@2x.webp 2x">
+              <source width="280" height="137" type="image/webp" srcset="images/photo-6-sunset-mobile@1x.webp 1x, images/photo-6-sunset-mobile@2x.webp 2x">
+              <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/photo-6-sunset-desktop@1x.jpg 1x, images/photo-6-sunset-desktop@2x.jpg 2x">
+              <source width="300" height="300" type="image/jpg" media="(min-width: 660px)" srcset="images/photo-6-sunset-tablet@1x.jpg 1x, images/photo-6-sunset-tablet@2x.jpg 2x">
+              <img class="photo__image" src="images/photo-6-sunset-mobile@1x.jpg" srcset="images/photo-6-sunset-mobile@2x.jpg 2x" width="280" height="137" alt="Крыло самолета на фоне заката">
+            </picture>
           </a>
           <p class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></p>
           <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -101,7 +158,14 @@
       <h2 class="visually-hidden">Загрузка и редактирование фотографий</h2>
       <p class="photos__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
-        <img class="post__image" src="#" width="280" height="374" alt="Изображение, загруженное пользователем">
+        <picture>
+          <source width="300" height="400" type="image/webp" media="(min-width: 1200px)" srcset="images/edit-photo-desktop@1x.webp 1x, images/edit-photo-desktop@2x.webp 2x">
+          <source width="300" height="400" type="image/webp" media="(min-width: 660px)" srcset="images/edit-photo-tablet@1x.webp 1x, images/edit-photo-tablet@2x.webp 2x">
+          <source width="280" height="374" type="image/webp" srcset="images/edit-photo-mobile@1x.webp 1x, images/edit-photo-mobile@2x.webp 2x">
+          <source width="300" height="400" type="image/jpg" media="(min-width: 1200px)" srcset="images/edit-photo-desktop@1x.jpg 1x, images/edit-photo-desktop@2x.jpg 2x">
+          <source width="300" height="400" type="image/jpg" media="(min-width: 660px)" srcset="images/edit-photo-tablet@1x.jpg 1x, images/edit-photo-tablet@2x.jpg 2x">
+          <img class="post__image" src="images/edit-photo-mobile@1x.jpg" srcset="images/edit-photo-mobile@2x.jpg 2x" width="280" height="374" alt="Изображение, загруженное пользователем">
+        </picture>
         <ul class="post__tools-list">
           <li class="post__tool">
             <button class="post__button-edit post__button-edit--crop" type="button">
@@ -142,7 +206,15 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="#" width="145" height="40" alt="Логотип Pink">
+      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses"></use>
+      </svg>
+      <svg class="logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+        <use href="../icons/stack.svg#logo-glasses-desktop"></use>
+      </svg>
+      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+        <use href="../icons/stack.svg#pink"></use>
+      </svg>
     </a>
     <ul class="main-footer__social social">
       <li class="social__item">
