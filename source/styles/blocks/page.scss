@@ -1,5 +1,5 @@
 .page__body {
   font-family: "Open Sans", "Arial", sans-serif;
 
-  @include text-parameters(14px, 400, 24px, $basic-text-color);
+  @include text-parameters(14px, 400, 24px, $text-color-basic);
 }

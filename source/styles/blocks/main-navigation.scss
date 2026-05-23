@@ -1,0 +1,5 @@
+.main-navigation__link {
+  @include text-parameters(18px, 700, 32px, $text-color-contrast);
+  text-transform: uppercase;
+  text-decoration: none;
+}

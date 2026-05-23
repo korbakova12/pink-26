@@ -1,0 +1,23 @@
+.contacts__title {
+  @include text-parameters(24px, 300, 120%, $text-color-basic);
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.contacts__option-title {
+  @include text-parameters(18px, 700, 18px, $text-color-basic);
+}
+
+.contacts__option-value {
+  @include text-parameters(24px, 300, 24px, $text-color-accent);
+  font-style: normal;
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.features__slogan {
+  @include text-parameters(24px, 300, 120%, $text-color-basic);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.features__title {
+  @include text-parameters(18px, 700, 24px, $text-color-dark);
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

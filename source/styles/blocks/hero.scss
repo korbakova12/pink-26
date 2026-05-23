@@ -1,0 +1,37 @@
+.hero {
+  color: $text-color-contrast;
+  background-color: $bg-color-dark-special;
+  text-align: center;
+}
+
+.hero__intro {
+  @include text-parameters(24px, 300, 120%, $text-color-contrast);
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.hero__link {
+  @include text-parameters(18px, 700, 18px, $text-color-contrast);
+  text-decoration: none;
+  border: 3px solid $border-color-light;
+  border-radius: 29px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.hero__description {
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

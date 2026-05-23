@@ -1,0 +1,8 @@
+.main-footer__developer {
+  color: $text-color-basic;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}

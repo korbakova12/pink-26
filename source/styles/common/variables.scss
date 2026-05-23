@@ -1,1 +1,19 @@
 /* здесь используйте глобальные переменные */
+// Цвет текста
+$text-color-basic: #283645;
+$text-color-contrast: #ffffff;
+$text-color-dark: #000000;
+$text-color-accent: #d22856;
+
+// Цвет фона
+$bg-color-navigation: rgba(0, 0, 0, 0.3);
+$bg-color-dark-basic: #283645;
+$bg-color-dark-special: #1d2631;
+
+//Цвет обводки
+$border-color-light: #ffffff;
+
+//Брейкпойнты
+$mobile-only: 659px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
