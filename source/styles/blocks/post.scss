@@ -1,0 +1,28 @@
+.post__description {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.post__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 29px;
+}
+
+.post__button--upload {
+  color: $text-color-accent;
+  border-color: $border-color-accent;
+}
+
+.post__button--reset {
+  color: $text-color-basic;
+  border-color: $border-dark-basic;
+  opacity: 0.1;
+}
