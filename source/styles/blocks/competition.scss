@@ -1,0 +1,16 @@
+.competition__description {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.competition__footnote {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.competition__footnote--symbol {
+  color: $text-color-accent;
+}

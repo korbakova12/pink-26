@@ -1,0 +1,6 @@
+.button-form {
+  @include text-parameters(18px, 700, 30px, $text-color-contrast);
+  text-transform: uppercase;
+  background-color: $bg-color-accent-2;
+  border: none;
+}
