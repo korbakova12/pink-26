@@ -1,0 +1,14 @@
+.field__label {
+  line-height: 30px;
+  color: $text-color-accent;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-size: inherit;
+  border: 2px solid $border-color-form;
+}
+
+.field__input::placeholder {
+  @include text-parameters(18px, 400, 30px, $text-color-basic);
+}

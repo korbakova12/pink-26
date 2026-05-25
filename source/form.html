@@ -12,13 +12,14 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+      <span class="visually-hidden">Логотип Pink</span>
+      <svg class="logo__image" width="59" height="40">
         <use href="../icons/stack.svg#logo-glasses"></use>
       </svg>
-      <svg class="logo__image logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+      <svg class="logo__image logo__image--desktop" width="59" height="40">
         <use href="../icons/stack.svg#logo-glasses-desktop"></use>
       </svg>
-      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+      <svg class="logo__text" width="74" height="23">
         <use href="../icons/stack.svg#pink"></use>
       </svg>
     </a>
@@ -41,10 +42,11 @@
         </li>
       </ul>
     </nav>
+    <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
   <main>
     <section class="competition">
-      <h1 class="competition__title page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
       <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="competition__field-group field-group">
@@ -66,7 +68,7 @@
         </fieldset>
         <fieldset class="competition__field-group field-group">
           <legend class="visually-hidden field-group__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul clsdd="field-group__list">
+          <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="control control--checkbox">
                 <input class="control__input" type="checkbox" name="achievment-shark" checked>
@@ -110,7 +112,7 @@
           <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="field__label" for="competition-phone">Номер телефона</label>
-              <input class="field__input" type="phone" name="phone" id="competition-phone" placeholder="Номер, пожалуйста">
+              <input class="field__input" type="tel" name="phone" id="competition-phone" placeholder="Номер, пожалуйста">
             </li>
             <li class="field-group__item field">
               <label class="field__label" for="competition-email">Адрес почты</label>
@@ -121,7 +123,7 @@
         <fieldset class="competition__field-group field-group">
           <legend class="field-group__title">С каким приложением
             путешествовали?</legend>
-          <ul clsdd="field-group__list">
+          <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="control control--radio">
                 <input class="control__input" type="radio" name="app" value="app-ios" checked>
@@ -143,24 +145,27 @@
             </li>
           </ul>
         </fieldset>
-        <div class="competition__field-group field-group">
+        <div class="field-group">
           <label class="field-group__title" for="competition-comment">Опишите свои эмоции</label>
-          <textarea class="field" name="comment" id="competition-comment">Расскажите в красках, не стесняясь в выражениях</textarea>
+          <div class="field">
+            <textarea class="field__input field__input--textarea" name="comment" id="competition-comment" placeholder="Расскажите в красках, не стесняясь в выражениях"></textarea>
+          </div>
         </div>
       </form>
-      <button class="competition__button" type="submit">Отправить форму</button>
-      <p class="competition__footnote">* - обязательные поля</p>
+      <button class="competition__button button-form" type="submit">Отправить форму</button>
+      <p class="competition__footnote"><span class="competition__footnote-symbol">*</span> - обязательные поля</p>
     </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo logo" href="index.html" aria-current="page">
-      <svg class="logo__image" width="59" height="40" alt="Логотип Pink">
+      <span class="visually-hidden">Логотип Pink</span>
+      <svg class="logo__image" width="59" height="40">
         <use href="../icons/stack.svg#logo-glasses"></use>
       </svg>
-      <svg class="logo__image--desktop" width="59" height="40" alt="Логотип Pink">
+      <svg class="logo__image logo__image--desktop" width="59" height="40">
         <use href="../icons/stack.svg#logo-glasses-desktop"></use>
       </svg>
-      <svg class="logo__text" width="74" height="23" alt="Логотип Pink">
+      <svg class="logo__text" width="74" height="23">
         <use href="../icons/stack.svg#pink"></use>
       </svg>
     </a>
@@ -186,12 +191,12 @@
   <section class="modal modal--wrong">
     <h2 class="modal__title">Что-то пошло не так!</h2>
     <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button" type="button">Ок</button>
+    <button class="modal__button  button-form" type="button">Ок</button>
   </section>
   <section class="modal modal--succes">
     <h2 class="modal__title">Ваша заявка отправлена</h2>
     <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    <button class="modal__button" type="button">Закрыть окно</button>
+    <button class="modal__button  button-form" type="button">Закрыть окно</button>
   </section>
 
 </body>

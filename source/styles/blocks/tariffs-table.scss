@@ -1,0 +1,33 @@
+.tariffs-table__header {
+  background-color: $bg-color-dark-basic;
+}
+
+.tariffs-table__title {
+  @include text-parameters(16px, 700, 30px, $text-color-contrast);
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.tariffs-table__price {
+  @include text-parameters(18px, 300, 30px, $text-color-contrast);
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.tariffs-table__option {
+  line-height: 30px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.tariffs-table__name {
+  line-height: 30px;
+  text-transform: uppercase;
+}

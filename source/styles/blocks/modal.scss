@@ -1,0 +1,15 @@
+.modal__title {
+  @include text-parameters (18px, 700, 24px, $text-color-dark);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__description {
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
