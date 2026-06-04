@@ -2,6 +2,17 @@
   background-color: $bg-color-dark-basic;
 }
 
+.tariffs-table__header--hit::before {
+  content: "хит";
+  display: block;
+  width: 105px;
+  height: 24px;
+
+  @include text-parameters (14px, 400, 30px, $text-color-contrast);
+
+  background-color: $bg-color-accent;
+}
+
 .tariffs-table__title {
   @include text-parameters(16px, 700, 30px, $text-color-contrast);
   text-transform: uppercase;
@@ -30,4 +41,18 @@
 .tariffs-table__name {
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.tariffs-table__avalable--yes {
+  display: inline-block;
+  width: 31px;
+  height: 21px;
+  background-image: url("../../icons/stack.svg#available-yes");
+}
+
+.tariffs-table__avalable--no {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../../icons/stack.svg#available-no");
 }
