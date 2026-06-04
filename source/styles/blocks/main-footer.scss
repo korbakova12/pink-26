@@ -1,8 +1,14 @@
 .main-footer__developer {
+  padding: 12px 42px 12px 0;
   color: $text-color-basic;
   text-decoration: none;
+  background-image: url("../../icons/stack.svg#htmlacademy");
+  background-size: 27px 34px;
+  background-repeat: no-repeat;
+  background-position: right center;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    padding-right: 40px;
   }
 }

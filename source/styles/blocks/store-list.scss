@@ -1,0 +1,36 @@
+.store-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.store-list__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.store-list__link--app {
+  background-size: contain;
+  background-image: url("../../icons/stack.svg#apple-logo");
+}
+
+.store-list__link--google {
+  // width: 43px;
+  // height: 47px;
+  background-size: 43px 47px;
+  background-image: url("../../icons/stack.svg#android-logo");
+}
+
+.store-list__link--microsoft {
+  // width: 44px;
+  // height: 41px;
+  background-size: 44px 41px;
+  background-image: url("../../icons/stack.svg#microsoft-logo");
+}
+

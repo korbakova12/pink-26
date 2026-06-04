@@ -6,6 +6,83 @@
   }
 }
 
+// .post__tools-list {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }
+
+.post__button-edit {
+  width: 48px;
+  height: 44px;
+  background-color: $bg-color-dark-basic;
+  opacity: 0.3;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  border: none;
+}
+
+.post__button-edit--active {
+  background-color: $bg-color-accent;
+  opacity: 1;
+}
+
+.post__button-edit--crop {
+  mask-image: url("../../icons/stack.svg#crop");
+  mask-size: 44px 44px;
+}
+
+.post__button-edit--fill {
+  mask-image: url("../../icons/stack.svg#fill");
+  mask-size: 48px 43px;
+}
+
+.post__button-edit--contrast {
+  mask-image: url("../../icons/stack.svg#contrast");
+  mask-size: 32px 32px;
+}
+
+.post__label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+.post__label--crop::before {
+  background-image: url("../../icons/stack.svg#crop");
+  background-size: 22px 22px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 44px 44px;
+  }
+}
+
+.post__label--fill::before {
+  background-image: url("../../icons/stack.svg#fill");
+  background-size: 24px 22px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 48px 43px;
+  }
+}
+
+.post__label--contrast::before {
+  background-image: url("../../icons/stack.svg#contrast");
+  background-size: 16px 16px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 32px 32px;
+  }
+}
+
 .post__button {
   font-size: 18px;
   line-height: 18px;

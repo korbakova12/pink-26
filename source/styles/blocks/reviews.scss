@@ -1,3 +1,13 @@
+.reviews__item {
+  @media (min-width: $desktop-width) {
+    padding-top: 112px;
+    background-image: url("../../icons/stack.svg#quotes");
+    background-size: 79px 63px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
 .reviews__author-name {
   @include text-parameters(18px, 700, 30px, $text-color-dark);
   font-style: normal;
