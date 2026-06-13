@@ -1,4 +1,12 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
 
   @include text-parameters(14px, 400, 24px, $text-color-basic);

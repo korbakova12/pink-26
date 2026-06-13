@@ -1,3 +1,44 @@
 .logo {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+    min-width: 145px;
+    justify-content: space-between;
+  }
 }
+
+.logo__image {
+  display: none;
+}
+
+.logo__image--tablet {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    display: block;
+    color: $bg-color-contrast;
+  }
+}
+
+.logo__image--desktop {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__text {
+  vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__text--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+

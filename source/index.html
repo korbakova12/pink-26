@@ -12,40 +12,46 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html" aria-current="page">
-        <span class="visually-hidden">Логотип Pink</span>
-        <svg class="logo__image" width="59" height="40">
-          <use href="../icons/stack.svg#logo-glasses"></use>
-        </svg>
-        <svg class="logo__image logo__image--desktop" width="59" height="40">
-          <use href="../icons/stack.svg#logo-glasses-desktop"></use>
-        </svg>
-        <svg class="logo__text" width="74" height="23">
-          <use href="../icons/stack.svg#pink"></use>
-        </svg>
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
+      <div class="container main-header__inner">
+        <a class="main-header__logo logo" href="index.html" aria-current="page">
+          <span class="visually-hidden">Логотип Pink</span>
+          <svg class="logo__image logo__image--tablet" width="59" height="40">
+            <use href="../icons/stack.svg#logo-glasses"></use>
+          </svg>
+          <svg class="logo__image logo__image--desktop" width="59" height="40">
+            <use href="../icons/stack.svg#logo-glasses-desktop-header"></use>
+          </svg>
+          <svg class="logo__text" width="74" height="23">
+            <use href="../icons/stack.svg#pink"></use>
+          </svg>
+          <svg class="logo__text logo__text--desktop" width="75" height="34">
+            <use href="../icons/stack.svg#pink-desktop"></use>
+          </svg>
+        </a>
+        <button class="main-header__toggle main-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru/study">Html academy</a>
-          </li>
-        </ul>
-      </nav>
+
+        <nav class="main-navigation main-navigation--closed">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/study">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="hero">
-      <p class="hero__intro">Взгляните на жизнь иначе!</p>
+      <p class="hero__intro">Взгляните на&nbsp;жизнь<br>иначе!</p>
       <picture>
         <source width="1050" height="645" type="image/webp" media="(min-width: 1200px)" srcset="images/hero-phone-desktop@1x.webp 1x, images/hero-phone-desktop@2x.webp 2x">
         <source width="660" height="545" type="image/webp" media="(min-width: 660px)" srcset="images/hero-phone-tablet@1x.webp 1x, images/hero-phone-tablet@2x.webp 2x">
@@ -54,25 +60,27 @@
         <source width="660" height="545" type="image/png" media="(min-width: 660px)" srcset="images/hero-phone-tablet@1x.png 1x, images/hero-phone-tablet@2x.png 2x">
         <img class="hero__image" src="images/hero-phone-mobile@1x.png" srcset="images/hero-phone-mobile@2x.png 2x" width="320" height="286" alt="Фотография Нью-Йоркской публичной библиотеки на телефоне с использованием розового фильтр.">
       </picture>
-      <a class="hero__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
-      <ul class="hero__store-list store-list">
-        <li class="store-list__item">
-          <a class="store-list__link store-list__link--app" href="https://www.apple.com/app-store/">
-            <span class="visually-hidden">Скачать в APP Store</span>
-          </a>
-        </li>
-        <li class="store-list__item">
-          <a class="store-list__link store-list__link--google" href="https://play.google.com/store/apps;?hl=ru">
-            <span class="visually-hidden">Скачать на Google Play</span>
-          </a>
-        </li>
-        <li class="store-list__item">
-          <a class="store-list__link store-list__link--microsoft" href="https://apps.microsoft.com/home?hl=en-US&gl=FO">
-            <span class="visually-hidden">Скачать на Microsoft Store</span>
-          </a>
-        </li>
-      </ul>
-      <p class="hero__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="hero__wrapper">
+        <a class="hero__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
+        <ul class="hero__store-list store-list">
+          <li class="store-list__item">
+            <a class="store-list__link store-list__link--app" href="https://www.apple.com/app-store/">
+              <span class="visually-hidden">Скачать в APP Store</span>
+            </a>
+          </li>
+          <li class="store-list__item">
+            <a class="store-list__link store-list__link--google" href="https://play.google.com/store/apps;?hl=ru">
+              <span class="visually-hidden">Скачать на Google Play</span>
+            </a>
+          </li>
+          <li class="store-list__item">
+            <a class="store-list__link store-list__link--microsoft" href="https://apps.microsoft.com/home?hl=en-US&gl=FO">
+              <span class="visually-hidden">Скачать на Microsoft Store</span>
+            </a>
+          </li>
+        </ul>
+        <p class="hero__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
   </header>
   <main>
@@ -223,7 +231,7 @@
         <use href="../icons/stack.svg#logo-glasses"></use>
       </svg>
       <svg class="logo__image logo__image--desktop" width="59" height="40">
-        <use href="../icons/stack.svg#logo-glasses-desktop"></use>
+        <use href="../icons/stack.svg#logo-glasses-desktop-footer"></use>
       </svg>
       <svg class="logo__text" width="74" height="23">
         <use href="../icons/stack.svg#pink"></use>

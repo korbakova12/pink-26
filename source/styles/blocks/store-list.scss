@@ -1,7 +1,8 @@
 .store-list {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  gap: 32px;
   padding: 0;
   list-style-type: none;
 }

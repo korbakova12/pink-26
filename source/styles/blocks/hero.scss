@@ -1,37 +1,131 @@
 .hero {
+  padding-top: 24px;
+  grid-column: 2 / 3;
   color: $text-color-contrast;
-  background-color: $bg-color-dark-special;
+  // background-color: $bg-color-dark-special;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 300px 320px 1fr;
+    grid-template-rows: auto 1fr;
+    padding-top: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 300px 640px 1fr;
+    padding-top: 98px;
+  }
 }
 
 .hero__intro {
+  margin-top: 0;
+  margin-bottom: 28px;
+
   @include text-parameters(24px, 300, 120%, $text-color-contrast);
 
   @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 30px;
+    padding-top: 20px;
     font-size: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+    padding-top: 0;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 68px;
+  }
+}
+
+.hero picture {
+  display: contents;
+}
+
+.hero__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    // grid-column: 2 / 5;
+  }
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  padding: 28px 0;
+  background-color: $bg-color-dark-special;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    justify-self: start;
+    padding: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: transparent;
   }
 }
 
 .hero__link {
+  grid-column: 2 / 3;
+  display: inline-block;
+  margin-bottom: 32px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  width: 100%;
+
   @include text-parameters(18px, 700, 18px, $text-color-contrast);
   text-decoration: none;
   border: 3px solid $border-color-light;
   border-radius: 29px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
   @media (min-width: $desktop-width) {
+    // grid-column: 2 / 3;
+    // grid-row: 2 / 3;
+    margin-bottom: 67px;
     font-size: 21px;
   }
 }
 
+.hero__store-list {
+  grid-column: 2 / 3;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+
+    // grid-column: 2 / 3;
+    // grid-row: 3 / 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
 .hero__description {
+  grid-column: 2 / 3;
+  margin: 0;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
+    // grid-column: 2 / 3;
+    // grid-row: 4 / 5;
     font-size: 18px;
   }
 }
